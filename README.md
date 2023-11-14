@@ -5,6 +5,6 @@ Api-Cats
 
 # screens
 
+![1](https://github.com/ialexss/cats-random-app/assets/107780424/6d71d4fe-f9e1-4a10-af9c-0f36923cea59)
 
-![IMG_6568](https://github.com/ialexss/cats-random-app/assets/107780424/d5010e6c-dd78-4c1b-aa98-e36b2b504b1f)
-![IMG_6569](https://github.com/ialexss/cats-random-app/assets/107780424/8687d27e-9872-4990-b6da-36fa909932cf)
+![2](https://github.com/ialexss/cats-random-app/assets/107780424/d5e781a2-7e8a-417f-b797-b030d24e73b6)
