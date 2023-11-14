@@ -2,13 +2,12 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from "@react-navigation/native";
-import { Entypo } from '@expo/vector-icons';
+import { MaterialIcons,MaterialCommunityIcons  } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
 
 //screens
 import HomeScreen from "./screens/HomeScreen";
-import SettingsScreen from "./screens/SettingScreen";
-import StackScreen from "./screens/StackScreen";
+import FavoriteScreen from "./screens/FavoriteScreen";
 
 const HomeStackNavigator = createNativeStackNavigator();
 
@@ -17,21 +16,14 @@ function MyStack(){
         <HomeStackNavigator.Navigator
             initialRouteName="HomeScreen"
             screenOptions={{
-                headerTintColor:'orange'                
+                headerTintColor:'#AF71FF'                
             }}
         >
             <HomeStackNavigator.Screen
-                name="HomeScreen"
+                name="Gatitos"
                 component={HomeScreen}
                 options={{
                     headerBackTitleVisible:false,                
-                }}
-            />
-            <HomeStackNavigator.Screen
-                name="Stack"
-                component={StackScreen}
-                options={{
-                    headerBackTitleVisible:false,               
                 }}
             />
         </HomeStackNavigator.Navigator>
@@ -45,17 +37,17 @@ function MyTabs(){
         <Tab.Navigator
             initialRouteName="Home"
             screenOptions={{
-                tabBarActiveTintColor:'orange',
-                headerTintColor:'orange',          
+                tabBarActiveTintColor:'#AF71FF',
+                headerTintColor:'#AF71FF',          
             }}
         >
             <Tab.Screen 
                 name="Home" 
                 component={MyStack}
                 options={{
-                    tabBarLabel:'Inicio',
+                    tabBarLabel:'Gatitos',
                     tabBarIcon:({color,size}) => (
-                       <Entypo name="home" size={size} color={color} />
+                    <MaterialCommunityIcons name="cat" size={size} color={color} />
                     ),
                     headerTitle:"Inicio",
                     headerShown:false
@@ -63,14 +55,14 @@ function MyTabs(){
                 }} 
             />
             <Tab.Screen 
-                name="Settings" 
-                component={SettingsScreen}
+                name="favorites" 
+                component={FavoriteScreen}
                 options={{
-                    tabBarLabel:'Configuracion',
+                    tabBarLabel:'Favoritos',
                     tabBarIcon:({color,size}) => (
-                       <Entypo name="tools" size={size} color={color} />
+                        <MaterialIcons name="favorite" size={size} color={color} />
                     ),
-                    headerTitle:"Configuracion",
+                    headerTitle:"Favoritos",
                 }}  
             />        
         </Tab.Navigator>

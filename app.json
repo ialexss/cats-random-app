@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "ferialibro2023-reactnative",
-    "slug": "ferialibro2023-reactnative",
+    "name": "gatitosapp",
+    "slug": "gatitosapp-reactnative",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/cat-what.gif",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
